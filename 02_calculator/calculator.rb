@@ -1,13 +1,13 @@
-def add(x,y)
-  x + y
+def add(num1, num2)
+  num1 + num2
 end
 
-def subtract(x,y)
-  x - y
+def subtract(num1, num2)
+  num1 - num2
 end
 
 def sum(arr)
-  arr.inject(0) { |sum, item| sum + item }
+  arr.inject(0) {|sum, item| sum + item}
 end
 
 describe "multiply" do
@@ -20,16 +20,17 @@ describe "multiply" do
 end
 
 def multiply(arr)
-  arr.inject(1) { |product, item| product * item }
+  arr.inject(1) {|product, item| product * item}
 end
 
 describe "power" do
   it "raises one number to the power of another number" do
+    power(5,2).should == 25
   end
 end
 
-def power(x,y)
-  x ** y
+def power(num1, num2)
+  num1 ** num2
 end
 
 describe "factorial" do
@@ -56,5 +57,9 @@ def factorial(x)
     solution
   end
 end
+
+
+  
+  
 
   
